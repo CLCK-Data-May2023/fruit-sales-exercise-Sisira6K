@@ -7,10 +7,13 @@ Apples	Bananas
 2017 Sales	35	21
 2018 Sales	41	34
 Write the data to a file called fruit.csv in the project directory."""
+#import dependencies
 import pandas as pd
+#create a dataframe
 columns = {"Apples":[35,41],"Bananas":[21,34]}
 index = ['2017 Sales','2018 Sales']
 df = pd.DataFrame(columns, index)
+#write data into csv file
 df.to_csv("fruit.csv")
 print(df)
 
